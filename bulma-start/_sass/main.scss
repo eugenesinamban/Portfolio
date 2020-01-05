@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// // Add pink and its invert
+$dark-blue:#b0bec5;
+$pink: #ff8080;
+$pink-invert: #fff;
+$brown: #bcaaa4;
+$brown-invert:rgba(#000,0.7);
+$scheme-1:#d84315;
+$scheme-1-invert:rgba(#000,0.7);
+$scheme-2:#212121;
+$scheme-2-invert:rgba(#000,0.7);
+$scheme-3:#679267;
+$scheme-3-invert:rgba(#000,0.7);
+$scheme-4:#fbc02d;
+$scheme-4-invert:rgba(#000,0.7);
+$scheme-5:#9c786c;
+$scheme-5-invert:rgba(#000,0.7);
+$light-invert:rgba(#000,0.7);
+// // Update the sans-serif font family
+// $family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// // 3. Set the derived variables
+// // Use the new pink as the primary color
+$primary: $scheme-3;
+$primary-invert:$scheme-3-invert;
+$info: $scheme-4;
+$info-invert: $scheme-4-invert;
+$warning: $scheme-5;
+$warning-invert:$scheme-5-invert;
+$link: $dark-blue;
+$light: $scheme-1;
+$dark: $scheme-2;
+//
+// $family-sans-serif:"Fira Sans";
+$footer-background-color:$scheme-2;
+// $primary-invert: $pink-invert;
+// 4. Import the rest of Bulma
+$link-hover:$scheme-1;
+
+@import "../node_modules/bulma/bulma";
+
+body {
+    background: #212121;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #212121;
+}
+
+footer {
+    text-align: center;
+}
+
+.is-scheme1 {
+    color: $scheme-1;
+}
+
+.content p, .content h3{
+    color: rgba(#000,0.7);
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: $scheme-1;
+    margin: 0 5%;
+}
