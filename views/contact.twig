@@ -1,0 +1,51 @@
+{% extends "main.twig" %}
+
+{% block main %}
+<section class="hero is-light is-medium">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">
+                Contact
+            </h1>
+            <h2 class="subtitle is-3">
+                Get in touch with Eugene
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="column is-one-third is-offset-one-third">
+            {% if error is not empty %}
+                <h3 class="title has-text-danger has-text-centered">
+                    <strong> {{ error }} </strong>
+                </h3>
+            {% endif %}
+            <h3 class="title is-4 has-text-white has-text-centered">
+                <strong>Contact Me!</strong>
+            </h3>
+            <form action="contact.php" method="POST">
+                <div class="field">
+                    <div class="control">
+                        <input type="email" class="input" name="email" placeholder="Enter E-mail Address">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input type="text" class="input" name="name" placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="field">
+
+                    <div class="control">
+                        <textarea name="message" id="" cols="30" rows="10" class="textarea" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="submit" class="button is-primary is-fullwidth">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock main %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="bulma-start/css/main.css">
+    <title>Eugene's Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav id="header" class="level">
+            <div class="level-item has-text-centered">
+                <a href="index.php" class="link is-info is-size-4">Home</a>
+            </div>
+            <div class="level-item has-text-centered">
+                <a href="portfolio.php" class="link is-info is-size-4">Portfolio</a>
+            </div>
+            <div class="level-item has-text-centered">
+                <h1 class="title is-size-3 is-scheme1">Fearless Dreamer</h1>
+            </div>
+            <div class="level-item">
+                <a href="about.php" class="link is-info is-size-4">About</a>
+            </div>
+            <div class="level-item">
+                <a href="contact.php" class="link is-info is-size-4">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        {% block main %}
+            
+        {% endblock main %}
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="is-scheme1">Follow the Creator!</p>
+            <a class="github-button" href="https://github.com/eugenesinamban" aria-label="Follow @eugenesinamban on GitHub">Follow @eugenesinamban</a><br>
+            <a href="https://twitter.com/EugeneSinamban?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false" target="_blank">Follow @EugeneSinamban</a><br>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p class="is-scheme1">
+                &copy; 2019 Eugene's Portfolio
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

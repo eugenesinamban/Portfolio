@@ -1,0 +1,76 @@
+{% extends "main.twig" %}
+
+{% block main %}
+    <section class="hero is-light is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Portfolio
+                </h1>
+                <h2 class="subtitle is-3">
+                    Eugene's works so far
+                </h2>
+            </div>
+        </div>
+    </section>
+    {% for key,content in contents %}
+        {% if key is even %}
+        <section class="section">
+            <div class="tile is-ancestor">
+                <div class="tile is-12">
+                    <div class="tile is-parent">
+                        <article class="tile is-child">
+                            <a href="{{ content.link }}">
+                                <figure class="image is-5by3">
+                                    <img src="{{ content.image }}">
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="tile is-parent is-vertical is-4">
+                        <article class="tile is-child">
+                            <p class="title is-1 has-text-white">
+                                {{ content.title }}
+                            </p>
+                        </article>
+                        <article class="tile is-child">
+                            <p class="title is-2 has-text-white">
+                                {{ content.details }}
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% else %}
+        <section class="section">
+            <div class="tile is-ancestor">
+                <div class="tile is-12">
+                    <div class="tile is-parent is-vertical is-4">
+                        <article class="tile is-child">
+                            <p class="title is-1 has-text-white">
+                                {{ content.title }}
+                            </p>
+                        </article>
+                        <article class="tile is-child">
+                            <p class="title is-2 has-text-white">
+                                {{ content.details }}
+                            </p>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child">
+                            <a href="{{ content.link }}">
+                                <figure class="image is-5by3">
+                                    <img src="{{ content.image }}">
+                                </figure>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        <div class="line"></div>
+    {% endfor %}
+{% endblock main %}
