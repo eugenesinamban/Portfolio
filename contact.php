@@ -37,7 +37,7 @@ if ("POST" === $_SERVER['REQUEST_METHOD']) {
     
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = "Comment received on YogiExchange";
+        $mail->Subject = "Comment received on Portfolio";
         $mail->Body    = MailTemplate::generate($message, $name);
         $mail->AltBody = $message;
     
