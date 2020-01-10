@@ -13,6 +13,12 @@
             </div>
         </div>
     </section>
+    <div class="tabs is-centered is-fullwidth" id="content">
+        <ul>
+            <li {% if language != 'japanese' %} class="is-active" {% endif %} ><a href="portfolio.php#content">English</a></li>
+            <li {% if language == 'japanese' %} class="is-active" {% endif %} ><a href="portfolio.php?language=japanese#content">日本語</a></li{% if language != 'japanese' %} class="is-active" {% endif %}>
+        </ul>
+    </div>
     {% for key,content in contents %}
         {% if key is even %}
         <section class="section">
@@ -20,7 +26,7 @@
                 <div class="tile is-12">
                     <div class="tile is-parent">
                         <article class="tile is-child">
-                            <a href="{{ content.link }}">
+                            <a href="{{ content.link }}" target="_blank">
                                 <figure class="image is-5by3">
                                     <img src="{{ content.image }}">
                                 </figure>
@@ -35,7 +41,11 @@
                         </article>
                         <article class="tile is-child">
                             <p class="title is-2 has-text-white">
-                                {{ content.details }}
+                                {% if language == 'english' %}
+                                    {{ content.details.english }}
+                                {% elseif language == 'japanese' %} 
+                                    {{ content.details.japanese}}
+                                {% endif %}
                             </p>
                         </article>
                     </div>
@@ -54,13 +64,17 @@
                         </article>
                         <article class="tile is-child">
                             <p class="title is-2 has-text-white">
-                                {{ content.details }}
+                                {% if language == 'english' %}
+                                    {{ content.details.english }}
+                                {% elseif language == 'japanese' %} 
+                                    {{ content.details.japanese}}
+                                {% endif %}
                             </p>
                         </article>
                     </div>
                     <div class="tile is-parent">
                         <article class="tile is-child">
-                            <a href="{{ content.link }}">
+                            <a href="{{ content.link }}" target="_blank">
                                 <figure class="image is-5by3">
                                     <img src="{{ content.image }}">
                                 </figure>
