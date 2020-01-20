@@ -58,6 +58,7 @@ $link-hover:$scheme-1;
 @import "../node_modules/bulma/bulma";
 
 body {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
     background: #212121;
 }
 
@@ -83,4 +84,8 @@ footer {
     width: 90%;
     background-color: $scheme-1;
     margin: 0 5%;
+}
+
+.line-height {
+    line-height: 2em;
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6957,6 +6958,7 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 body {
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   background: #212121; }
 
 header {
@@ -6977,3 +6979,6 @@ footer {
   width: 90%;
   background-color: #d84315;
   margin: 0 5%; }
+
+.line-height {
+  line-height: 2em; }
