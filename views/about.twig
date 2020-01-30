@@ -1,7 +1,4 @@
-{% extends "main.twig" %}
-
-{% block main %}
-    <section class="hero is-light is-medium">
+    <section class="hero is-light is-medium" id="about">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title is-1">
@@ -19,18 +16,18 @@
                 <h3 class="title is-4 has-text-white has-text-right">
                     <strong>Welcome to my page!</strong>
                 </h3>
+                {% for line in contents.about %}
                 <h4 class="is-6 has-text-white has-text-right">
-                    My name is Eugene Sinamban, and I am currently a 1st year student at Tech C. taking up
-                    Programming.
+                    {% if language == 'english' %}
+                        {{ line.english }}
+                    {% elseif language == 'japanese' %}
+                        {{ line.japanese }}
+                    {% endif %}
                 </h4>
+                {% endfor %}
                 <h4 class="is-6 has-text-white has-text-right">
-                    What you'll see on this website is a collection of my works so far, and links to live websites.
-                </h4>
-                <h4 class="is-6 has-text-white has-text-right">
-                    Creates websites mostly on PHP. Currently learning how to write in JavaScript and Python.
-                    Still learning how to write on CSS.
+                  <a href="https://github.com/eugenesinamban" target="_blank">Follow me on github!</a> 
                 </h4>
             </div>
         </div>
     </section>
-{% endblock main %}

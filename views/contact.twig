@@ -1,7 +1,4 @@
-{% extends "main.twig" %}
-
-{% block main %}
-<section class="hero is-light is-medium">
+<section class="hero is-light is-medium" id="contact">
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-1">
@@ -24,7 +21,7 @@
             <h3 class="title is-4 has-text-white has-text-centered">
                 <strong>Contact Me!</strong>
             </h3>
-            <form action="contact.php" method="POST">
+            <form action="#" method="POST">
                 <div class="field">
                     <div class="control">
                         <input type="email" class="input" name="email" placeholder="Enter E-mail Address">
@@ -38,7 +35,7 @@
                 <div class="field">
 
                     <div class="control">
-                        <textarea name="message" id="" cols="30" rows="10" class="textarea" rows="5"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" class="textarea" rows="5" placeholder="Enter Comment Here"></textarea>
                     </div>
                 </div>
                 <div class="field">
@@ -48,4 +45,3 @@
         </div>
     </div>
 </section>
-{% endblock main %}

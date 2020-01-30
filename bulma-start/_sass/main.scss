@@ -29,6 +29,7 @@ $scheme-4-invert:rgba(#000,0.7);
 $scheme-5:#9c786c;
 $scheme-5-invert:rgba(#000,0.7);
 $light-invert:rgba(#000,0.7);
+$white : #fff;
 // // Update the sans-serif font family
 // $family-sans-serif: "Helvetica", "Arial", sans-serif;
 
@@ -82,7 +83,7 @@ footer {
 .line {
     height: 1px;
     width: 90%;
-    background-color: $scheme-1;
+    background-color: $white;
     margin: 0 5%;
 }
 

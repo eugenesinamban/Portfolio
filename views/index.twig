@@ -1,7 +1,7 @@
 {% extends "main.twig" %}
 
 {% block main %}
-<section class="hero is-light is-fullheight">
+<section class="hero is-dark is-fullheight" id="home">
     <div class="hero-body">
         <div class="container">
             <h1 class="title is-1">
@@ -13,4 +13,13 @@
         </div>
     </div>
 </section>
+
+{% for page in pages %}
+    {{ include(page ~ '.twig') }}
+    <div class="section">
+        <div class="container has-text-centered">
+            <a href="#home" class="button is-primary">Back to top</a>
+        </div>
+    </div>
+{% endfor %}
 {% endblock main %}

@@ -1,90 +1,86 @@
-{% extends "main.twig" %}
-
-{% block main %}
-    <section class="hero is-light is-medium">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title is-1">
-                    Portfolio
-                </h1>
-                <h2 class="subtitle is-3">
-                    Eugene's works so far
-                </h2>
+<section class="hero is-light is-medium" id="portfolio">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title is-1">
+                Portfolio
+            </h1>
+            <h2 class="subtitle is-3">
+                Eugene's works so far
+            </h2>
+        </div>
+    </div>
+</section>
+<div class="tabs is-centered is-fullwidth" id="content">
+    <ul>
+        <li {% if language != 'japanese' %} class="is-active" {% endif %} ><a href="index.php#content">English</a></li>
+        <li {% if language == 'japanese' %} class="is-active" {% endif %} ><a href="index.php?language=japanese#content">日本語</a></li{% if language != 'japanese' %} class="is-active" {% endif %}>
+    </ul>
+</div>
+{% for key,content in contents.portfolio %}
+    {% if key is even %}
+    <section class="section">
+        <div class="tile is-ancestor">
+            <div class="tile is-12">
+                <div class="tile is-parent">
+                    <article class="tile is-child">
+                        <a href="{{ content.link }}" target="_blank">
+                            <figure class="image is-5by3">
+                                <img src="{{ content.image }}">
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                <div class="tile is-parent is-vertical is-4">
+                    <article class="tile is-child">
+                        <p class="title is-1 has-text-white">
+                            {{ content.title }}
+                        </p>
+                    </article>
+                    <article class="tile is-child">
+                        <p class="title is-5 has-text-white line-height">
+                            {% if language == 'english' %}
+                                {{ content.details.english }}
+                            {% elseif language == 'japanese' %} 
+                                {{ content.details.japanese}}
+                            {% endif %}
+                        </p>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
-    <div class="tabs is-centered is-fullwidth" id="content">
-        <ul>
-            <li {% if language != 'japanese' %} class="is-active" {% endif %} ><a href="portfolio.php#content">English</a></li>
-            <li {% if language == 'japanese' %} class="is-active" {% endif %} ><a href="portfolio.php?language=japanese#content">日本語</a></li{% if language != 'japanese' %} class="is-active" {% endif %}>
-        </ul>
-    </div>
-    {% for key,content in contents %}
-        {% if key is even %}
-        <section class="section">
-            <div class="tile is-ancestor">
-                <div class="tile is-12">
-                    <div class="tile is-parent">
-                        <article class="tile is-child">
-                            <a href="{{ content.link }}" target="_blank">
-                                <figure class="image is-5by3">
-                                    <img src="{{ content.image }}">
-                                </figure>
-                            </a>
-                        </article>
-                    </div>
-                    <div class="tile is-parent is-vertical is-4">
-                        <article class="tile is-child">
-                            <p class="title is-1 has-text-white">
-                                {{ content.title }}
-                            </p>
-                        </article>
-                        <article class="tile is-child">
-                            <p class="title is-5 has-text-white line-height">
-                                {% if language == 'english' %}
-                                    {{ content.details.english }}
-                                {% elseif language == 'japanese' %} 
-                                    {{ content.details.japanese}}
-                                {% endif %}
-                            </p>
-                        </article>
-                    </div>
+    {% else %}
+    <section class="section">
+        <div class="tile is-ancestor">
+            <div class="tile is-12">
+                <div class="tile is-parent is-vertical is-4">
+                    <article class="tile is-child">
+                        <p class="title is-1 has-text-white">
+                            {{ content.title }}
+                        </p>
+                    </article>
+                    <article class="tile is-child">
+                        <p class="title is-5 has-text-white line-height">
+                            {% if language == 'english' %}
+                                {{ content.details.english }}
+                            {% elseif language == 'japanese' %} 
+                                {{ content.details.japanese}}
+                            {% endif %}
+                        </p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child">
+                        <a href="{{ content.link }}" target="_blank">
+                            <figure class="image is-5by3">
+                                <img src="{{ content.image }}">
+                            </figure>
+                        </a>
+                    </article>
                 </div>
             </div>
-        </section>
-        {% else %}
-        <section class="section">
-            <div class="tile is-ancestor">
-                <div class="tile is-12">
-                    <div class="tile is-parent is-vertical is-4">
-                        <article class="tile is-child">
-                            <p class="title is-1 has-text-white">
-                                {{ content.title }}
-                            </p>
-                        </article>
-                        <article class="tile is-child">
-                            <p class="title is-5 has-text-white line-height">
-                                {% if language == 'english' %}
-                                    {{ content.details.english }}
-                                {% elseif language == 'japanese' %} 
-                                    {{ content.details.japanese}}
-                                {% endif %}
-                            </p>
-                        </article>
-                    </div>
-                    <div class="tile is-parent">
-                        <article class="tile is-child">
-                            <a href="{{ content.link }}" target="_blank">
-                                <figure class="image is-5by3">
-                                    <img src="{{ content.image }}">
-                                </figure>
-                            </a>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {% endif %}
-        <div class="line"></div>
-    {% endfor %}
-{% endblock main %}
+        </div>
+    </section>
+    {% endif %}
+    <div class="line"></div>
+{% endfor %}
