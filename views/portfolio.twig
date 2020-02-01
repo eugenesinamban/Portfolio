@@ -10,12 +10,7 @@
         </div>
     </div>
 </section>
-<div class="tabs is-centered is-fullwidth" id="content">
-    <ul>
-        <li {% if language != 'japanese' %} class="is-active" {% endif %} ><a href="index.php#content">English</a></li>
-        <li {% if language == 'japanese' %} class="is-active" {% endif %} ><a href="index.php?language=japanese#content">日本語</a></li{% if language != 'japanese' %} class="is-active" {% endif %}>
-    </ul>
-</div>
+
 {% for key,content in contents.portfolio %}
     {% if key is even %}
     <section class="section">

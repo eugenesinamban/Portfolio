@@ -13,7 +13,12 @@
         </div>
     </div>
 </section>
-
+<div class="tabs is-centered is-fullwidth" id="content">
+    <ul>
+        <li {% if language != 'japanese' %} class="is-active" {% endif %} ><a href="index.php#content">EN</a></li>
+        <li {% if language == 'japanese' %} class="is-active" {% endif %} ><a href="index.php?language=japanese#content">JP</a></li{% if language != 'japanese' %} class="is-active" {% endif %}>
+    </ul>
+</div>
 {% for page in pages %}
     {{ include(page ~ '.twig') }}
     <div class="section">
