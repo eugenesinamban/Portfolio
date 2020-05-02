@@ -18,7 +18,7 @@ $portfolio = [
         'details' => [
             //
             'english' => 'My very first website, written in Japanese, created to use during self introductions',
-            'japanese' => '初めてのウェブサイト。自己紹介の時に役に立てそうなウェブサイトを作ろうかと思った時に作ったウェブサイト。'
+            'japanese' => '初めてのウェブサイト。自己紹介の時に役に立ちそうなウェブサイトを作ろうかと思った時に作ったウェブサイト。'
         ],
         'link' => '/genki/top.html',
         'image' => 'images/Genki.png'
@@ -27,7 +27,7 @@ $portfolio = [
         'title' => "Yogi's Exchange",
         'details' => [
             'english' => 'Website to check foreign exchange rates',
-            'japanese' => '為替レートを見ることできるウェブサイト。'
+            'japanese' => '為替レートを見ることができるウェブサイト。'
         ],
         'link' => 'http://yogiexchange.rf.gd/',
         'image' => 'images/Exchange.png'
