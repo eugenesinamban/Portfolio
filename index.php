@@ -68,9 +68,9 @@ $portfolio = [
 $about = [
 
     [
-        'english' => 'My name is Eugene Sinamban, and I am currently a 1st year student at Tech C. taking up
+        'english' => 'My name is Eugene Sinamban, and I am currently a 2nd year student at Tech C. taking up
         Programming.',
-        'japanese' => '初めまして、東京デザインテクノロジーセンター専門学校で在学中、一年生プログラマー専攻のシナンバン・ユージンです。'
+        'japanese' => '初めまして、東京デザインテクノロジーセンター専門学校で在学中、二年生プログラマー専攻のシナンバン・ユージンです。'
     ],
     [
         'english' => "What you'll see on this website is a collection of my works so far, and links to live websites.",
