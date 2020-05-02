@@ -47,7 +47,7 @@ $portfolio = [
         'title' => 'Tokyo Readers Club',
         'details' => [
             'english' => 'Club for people who love to read, English or Japanese.',
-            'japanese' => '読書が好き方々のサークルのウェブサイト。'
+            'japanese' => '読書が好きな方々のサークルのウェブサイト。'
         ],
         'link' => '/tokyo-readers-club/index.php',
         'image' => 'images/ReadersClub.png'
