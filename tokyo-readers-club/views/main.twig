@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tokyo Reader's Club</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="has-text-white">
+
+            <section class="section">
+                <div class="nav-bar">
+                    <a href="index.php">
+                        <div class="is-5">
+                        Home
+                        </div>
+                    </a>
+                    <a href="join.php">
+                        <div class="is-5">
+                            Join Us
+                        </div>
+                    </a>
+                    <a href="about.php">
+                        <div class="is-5">
+                        About
+                        </div>
+                    </a>
+                    <a href="contact.php">
+                        <div class="is-5">
+                        Contact Us
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </header>
+        <main>
+            {% block main %}
+                
+            {% endblock main %}
+        </main>
+        <footer>
+            <section class="section has-text-white">
+                <div class="container">
+                    <p>Follow the Creator!</p>
+                    <a class="github-button" href="https://github.com/eugenesinamban" aria-label="Follow @eugenesinamban on GitHub">Follow @eugenesinamban</a>
+                    <p>
+                        &copy; 2019 Eugene's Portfolio
+                    </p>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>

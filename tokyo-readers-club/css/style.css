@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body {
+    background: url("alfons-morales-YLSwjSy7stw-unsplash.jpg") fixed;
+    background-size: 100%;
+    /* background-color: #fafafa; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    /* border: 2px gold solid; */
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    display: flex;
+    padding: 1em 0;
+    width: 100%;
+}
+
+main {
+    /* border: 2px gold solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    width: 100%;
+}
+
+footer {
+    /* border: 2px gold solid; */
+    margin: 0 auto;
+    padding: 5em 0;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+a {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+a:hover {
+    color: #c7c7c7;
+}
+
+article {
+    margin: 15em 0;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    border: none;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4 {
+    margin: 1em 0;
+}
+
+p {
+    margin: 0.5em auto;
+    /* width: 50%; */
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+    width: 90%;
+} 
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.has-text-white {
+    color: #fafafa;
+}
+
+.has-background-white {
+    background-color: #bdbdbd;
+}
+
+.is-1 {
+    font-size: 3em;
+}
+
+.is-2 {
+    font-size: 2.5em;
+}
+
+.is-3 {
+    font-size: 2em;
+}
+
+.is-4 {
+    font-size: 1.5em;
+}
+
+.is-5 {
+    font-size: 1em;
+}
+
+.image {
+    border-radius: 25px;
+}
+
+.input {
+    width: 50%;
+    height: 2em;
+    margin: 3em auto;
+}
+
+@media (max-width:980px) {
+    .input {
+        width: 100%;
+    }
+}
+
+.nav-bar {
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: space-around;
+    line-height: 2em;
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media (max-width:980px) {
+    .nav-bar {
+        width: 100%;
+    }
+}
+
+.main-content {
+    width: 50%;
+    display: block;
+    margin: 0.5em auto;
+}
+
+.side-content {
+    width: 40%;
+}
+
+.side-content img {
+    height: auto;
+    width: 100%;
+}
+
+.section {
+    /* border: 1px blue solid; */
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.welcome {
+    padding: 18em 0;
+    width: 100%;
+}
+
+.wrap {
+    background-color: rgba(0, 0, 0, 0.8);
+}
