@@ -1,0 +1,30 @@
+body {
+    background: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    width: 250px;
+    background: white;
+    font-family: serif;
+    text-align: center;
+    border: 3px double red;
+    margin: auto;
+}
+
+.main {
+    height: 350px;
+    font-size: 20px;
+    background: url(http://image.news.livedoor.com/newsimage/stf/1/8/182d1_1459_7b43cab67676e31c9b7c9d019174a624.jpg) repeat-x;
+    border: 3px double red;
+    text-align: center;
+}
+
+p {
+    background: url(http://image.news.livedoor.com/newsimage/stf/1/8/182d1_1459_7b43cab67676e31c9b7c9d019174a624.jpg) repeat;
+}

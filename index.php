@@ -21,7 +21,7 @@ $portfolio = [
             'japanese' => '初めてのウェブサイト。自己紹介の時に役に立てそうなウェブサイトを作ろうかと思った時に作ったウェブサイト。'
         ],
         'link' => '/genki/top.html',
-        'image' => 'images/genki.png'
+        'image' => 'images/Genki.png'
     ],
     [
         'title' => "Yogi's Exchange",

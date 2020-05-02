@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>問い合わせ</title>
+</head>
+<body>
+    <h1>問い合わせ</h1>
+
+<form>
+ <p>
+  名前    
+    <input type="text" name="name">
+    </p>
+    <p>
+  メールアドレス
+    <input type="email" name="email"><br>
+    </p>
+    <p>
+  性別
+    <input type="radio" name="gender" value="male">男性
+    <input type="radio" name="gender" value="female">女性
+    </p>
+    <p>
+  血液型
+    <select name="bloodtype">
+        <option value="A型">A型</option>
+        <option value="B型">B型</option>
+        <option value="AB型">AB型B</option>
+        <option value="O型">O型</option>
+    </select>
+    </p>
+    <p>
+      悠仁の好きなところ<br>
+        <input type="checkbox" name="page" value="rekishi">歴史<br>
+        <input type="checkbox" name="page" value="seikaku">性格<br>
+        <input type="checkbox" name="page" value="sukina">好きなもの,趣味<br>
+        <input type="checkbox" name="page" value="zenbu">全部<br>
+    </p>
+       
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
