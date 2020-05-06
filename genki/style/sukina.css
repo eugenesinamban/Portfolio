@@ -11,6 +11,7 @@ h2 {
     font-size: 20px;
     width: 250px;
     background: white;
+    color: black;
     font-family: serif;
     text-align: center;
     border: 3px double red;

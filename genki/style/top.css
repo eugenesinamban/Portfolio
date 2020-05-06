@@ -1,8 +1,8 @@
 .welcome {
     font-size: 20px;
     width: 250px;
-    background: white;
-    font-family: serif;
+    background: whitesmoke;
+    color: black;
     text-align: center;
     border: 3px double red;
     margin: auto;
@@ -16,10 +16,6 @@ h4 {
     text-align: center;
     border: 3px double red;
     margin: auto;
-}
-
-body {
-    background: black;
 }
 
 h1 {

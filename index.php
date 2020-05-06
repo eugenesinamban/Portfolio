@@ -20,7 +20,7 @@ $portfolio = [
             'english' => 'My very first website, written in Japanese, created to use during self introductions',
             'japanese' => '初めてのウェブサイト。自己紹介の時に役に立ちそうなウェブサイトを作ろうかと思った時に作ったウェブサイト。'
         ],
-        'link' => '/genki/top.html',
+        'link' => '/genki/index.html',
         'image' => 'images/Genki.png'
     ],
     [

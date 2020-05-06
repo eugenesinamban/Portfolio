@@ -1,0 +1,14 @@
+* {
+    font-family: "Sawarabi Mincho";
+    background-color: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-img {
+    height: 100px;
+    width: 150px;
+}
