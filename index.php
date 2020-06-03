@@ -62,6 +62,16 @@ $portfolio = [
         ],
         'link' => 'https://tech-c-overflow.herokuapp.com',
         'image' => 'images/tflow.png'
+    ],
+    [
+        'title' => 'Calculator',
+        'details' => [
+            'english' => 'A calculator made purely with React library. I made this application as a stepping stone to creating the mobile
+            application for Tech C Overflow, my other website, which I plan to create with React Native.',
+            'japanese' => 'React.jsで作られた電卓。Tech C Overflowの連携アプリを作るために練習のアプリを作りました'
+         ],
+        'link' => 'https://radiant-harbor-05944.herokuapp.com/',
+        'image' => 'images/react-calculator.png'
     ]
 ];
 
