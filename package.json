@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-new",
+  "version": "1.0.0",
+  "description": "Eugene's portfolio",
+  "main": "index.php",
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "jquery": "^3.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/style.scss css/style.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Eugene Sinamban",
+  "license": "ISC"
+}

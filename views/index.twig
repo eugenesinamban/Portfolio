@@ -1,4 +1,4 @@
-{% extends "main.twig" %}
+{% extends "template.twig" %}
 
 {% block main %}
 <section class="hero is-dark is-fullheight" id="home">
@@ -8,7 +8,7 @@
                 Fearless Dreamer
             </h1>
             <h2 class="subtitle is-3">
-                Collection of Eugene's websites
+                Collection of Eugene's Projects
             </h2>
         </div>
     </div>
@@ -23,7 +23,7 @@
     {{ include(page ~ '.twig') }}
     <div class="section">
         <div class="container has-text-centered">
-            <a href="#home" class="button is-primary">Back to top</a>
+            <a class="button is-primary top">Back to top</a>
         </div>
     </div>
 {% endfor %}

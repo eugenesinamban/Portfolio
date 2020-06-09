@@ -72,6 +72,15 @@ $portfolio = [
          ],
         'link' => 'https://radiant-harbor-05944.herokuapp.com/',
         'image' => 'images/react-calculator.png'
+    ],
+    [
+        'title' => 'Corona Data Search',
+        'details' => [
+            'english' => 'A test website using React, designed to provide updated data regarding Covid-19 cases provided by an api.',
+            'japanese' => 'React.jsで作られたコロナの感染者数などの情報を提供するウェブサイトです。ReactでのAPIのデータ取得方法の練習するために作りました'
+         ],
+        'link' => 'https://boiling-sierra-92918.herokuapp.com/',
+        'image' => 'images/corona-number-search.png'
     ]
 ];
 

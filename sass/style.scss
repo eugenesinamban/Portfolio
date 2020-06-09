@@ -1,0 +1,90 @@
+@charset "utf-8";
+// @import "../node_modules/bulma/bulma.sass";
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// // Add pink and its invert
+$dark-blue:#b0bec5;
+$pink: #ff8080;
+$pink-invert: #fff;
+$brown: #bcaaa4;
+$brown-invert:rgba(#000,0.7);
+$scheme-1:#d84315;
+$scheme-1-invert:rgba(#000,0.7);
+$scheme-2:#212121;
+$scheme-2-invert:rgba(#000,0.7);
+$scheme-3:#679267;
+$scheme-3-invert:rgba(#000,0.7);
+$scheme-4:#fbc02d;
+$scheme-4-invert:rgba(#000,0.7);
+$scheme-5:#9c786c;
+$scheme-5-invert:rgba(#000,0.7);
+$light-invert:rgba(#000,0.7);
+$white : #fff;
+// // Update the sans-serif font family
+// $family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// // 3. Set the derived variables
+// // Use the new pink as the primary color
+$navbar-background-color: $scheme-2;
+$primary: $scheme-3;
+$primary-invert:$scheme-3-invert;
+$info: $scheme-4;
+$info-invert: $scheme-4-invert;
+$warning: $scheme-5;
+$warning-invert:$scheme-5-invert;
+$link: $dark-blue;
+$light: $scheme-1;
+$dark: $scheme-2;
+$tabs-link-active-color: $scheme-1;
+$tabs-link-active-border-bottom-color: $scheme-1;
+$tabs-link-hover-border-bottom-color: #fff;
+$tabs-link-hover-color: #fff;
+$tabs-link-color: #fff;
+//
+// $family-sans-serif:"Fira Sans";
+$footer-background-color:$scheme-2;
+// $primary-invert: $pink-invert;
+// 4. Import the rest of Bulma
+$link-hover:$scheme-1;
+
+@import "../node_modules/bulma/bulma";
+
+body {
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    background: #212121;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav .navbar {
+    background: #212121;
+}
+
+footer {
+    text-align: center;
+}
+
+.is-scheme1 {
+    color: $scheme-1;
+}
+
+.content p, .content h3{
+    color: rgba(#000,0.7);
+}
+
+.line {
+    height: 1px;
+    width: 90%;
+    background-color: $white;
+    margin: 0 5%;
+}
+
+.line-height {
+    line-height: 2em;
+}
